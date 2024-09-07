@@ -22,16 +22,19 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Soul Chat</span>
-        <span className="title">Login</span>
+        <span className="logo">Welcome to Soul Chat</span>
+        <span className="title">Sign in</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="Enter your email" />
           <input type="password" placeholder="Enter your password" />
-          <button>Sign in</button>
-          {err && <span>Something went wrong</span>}
+          {/* <button>Sign in</button> */}
+          <button className="glow-on-hover" type="submit">
+            Sign in
+          </button>
+          {err && <span className="logerror"> Something went wrong</span>}
         </form>
         <p className="loginP">
-          You don't have an account? <Link to="/register">Register</Link>
+          You don't have an account? <Link to="/register">Sign Up</Link>
         </p>
       </div>
     </div>
