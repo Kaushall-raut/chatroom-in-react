@@ -27,7 +27,7 @@ export const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>just now</span>
+        <span style={{ color: "white" }}>just now</span>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>
